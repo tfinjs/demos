@@ -1,0 +1,32 @@
+{
+  "name": "@tfinjs-demos/simple-resources",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "tfinjs build ./src/index.js -o ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricsam/tfinjs-demos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricsam/tfinjs-demos/issues"
+  },
+  "homepage": "https://pedantic-sammet-e08804.netlify.com/",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "tfinjs": "^0.0.10",
+    "tfinjs-cli": "^0.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "prettier": "^1.15.1"
+  }
+}
