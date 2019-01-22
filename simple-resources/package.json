@@ -18,9 +18,11 @@
   },
   "homepage": "https://pedantic-sammet-e08804.netlify.com/",
   "dependencies": {
-    "dotenv": "^6.2.0",
-    "tfinjs": "^0.0.10",
-    "tfinjs-cli": "^0.0.5"
+    "@tfinjs/api": "^0.0.23-beta",
+    "@tfinjs/aws-lambda": "^0.0.5-beta",
+    "@tfinjs/aws-lambda-packager": "^0.0.3-beta",
+    "@tfinjs/cli": "^0.0.12-beta",
+    "dotenv": "^6.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
