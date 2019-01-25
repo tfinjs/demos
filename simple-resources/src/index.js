@@ -45,24 +45,24 @@ const backend = new Backend('s3', {
     key: `${name}.terraform.tfstate`,
     region: backendBucketRegion,
   }),
-  provider: new Provider(
-    'aws',
-    {
-      region: backendBucketRegion,
-      assume_role: {
-        role_arn: `arn:aws:iam::${awsAccoundId}:role/${awsRole}`,
-      },
-    },
-    awsProviderUri(awsAccoundId, backendBucketRegion),
-  ),
-  create: (deploymentConfig) =>
-    new Resource(deploymentConfig, 'aws_s3_bucket', 'terraform_state_prod', {
-      bucket: backendBucketName,
-      acl: 'private',
-      versioning: {
-        enabled: true,
-      },
-    }),
+  // provider: new Provider(
+  //   'aws',
+  //   {
+  //     region: backendBucketRegion,
+  //     assume_role: {
+  //       role_arn: `arn:aws:iam::${awsAccoundId}:role/${awsRole}`,
+  //     },
+  //   },
+  //   awsProviderUri(awsAccoundId, backendBucketRegion),
+  // ),
+  // create: (deploymentConfig) =>
+  //   new Resource(deploymentConfig, 'aws_s3_bucket', 'terraform_state_prod', {
+  //     bucket: backendBucketName,
+  //     acl: 'private',
+  //     versioning: {
+  //       enabled: true,
+  //     },
+  //   }),
 });
 
 const project = new Project('pet-shop', backend, resolve(__dirname, 'dist'));

@@ -141,9 +141,9 @@
     webpack "^4.28.2"
     webpack-node-externals "^1.7.2"
 
-"@tfinjs/aws-lambda@^0.0.5-beta":
-  version "0.0.5-beta"
-  resolved "https://registry.yarnpkg.com/@tfinjs/aws-lambda/-/aws-lambda-0.0.5-beta.tgz#194eba7ee160eb3032c5bf324b3c2367f623de66"
+"@tfinjs/aws-lambda@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@tfinjs/aws-lambda/-/aws-lambda-0.0.5.tgz#d3eef120305dc8cb8ad818e29c03e4136f44a0cd"
   dependencies:
     fs-extra "^7.0.1"
     memory-fs "^0.4.1"
