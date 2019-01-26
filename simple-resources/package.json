@@ -1,10 +1,12 @@
 {
-  "name": "@tfinjs-demos/simple-resources",
-  "version": "0.0.1",
+  "name": "@tfinjs/demos-simple-resources",
+  "version": "0.1.0",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "build": "tfinjs build ./src/index.js -o ./dist"
+    "tfinjs": "tfinjs",
+    "build": "tfinjs build ./src/index.js -o ./dist",
+    "commit": "git add . && git commit -m \"wip\" && git push"
   },
   "repository": {
     "type": "git",
@@ -18,17 +20,10 @@
   },
   "homepage": "https://pedantic-sammet-e08804.netlify.com/",
   "dependencies": {
-    "@tfinjs/api": "^0.0.23-beta",
-    "@tfinjs/aws-lambda": "^0.0.5",
-    "@tfinjs/aws-lambda-packager": "^0.0.3-beta",
-    "@tfinjs/cli": "^0.0.12-beta",
+    "@tfinjs/api": "file:../../api",
+    "@tfinjs/aws-lambda": "file:../../aws-lambda",
+    "@tfinjs/aws-lambda-packager": "file:../../aws-lambda-packager",
+    "@tfinjs/cli": "file:../../cli",
     "dotenv": "^6.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "eslint": "^5.8.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "prettier": "^1.15.1"
   }
 }
